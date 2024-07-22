@@ -50,15 +50,28 @@ body{
     grid-template-columns: 1fr 4fr;
     grid-template-rows:1fr 6fr;
 }
-  .sidebar{
-    background-color: #0ea5e9;
-    grid-row:1/-1;
-    grid-column:1/2;
-  }
-  .icon{
-    fill:white;
-    width:2ch;
-  }
-  svg{
-    color:white;
-  }
+.sidebar{
+  background-color: #0ea5e9;
+  grid-row:1/-1;
+  grid-column:1/2;
+  color:white;
+  margin-right:auto;
+  padding-left:3ch;
+}
+.sidebar img{
+  height:1em;
+  justify-self: start;
+}
+nav.profile,
+nav.help{
+  font-size:2em;
+}
+.dashboard{
+  font-size:3em;
+}
+.sidebar div{
+  display:grid;
+  align-items: center;
+  justify-content: start;
+  grid-template-columns: minmax(30px,3ch) minmax(300px,10%);
+}
