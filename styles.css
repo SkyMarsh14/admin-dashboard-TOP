@@ -47,18 +47,12 @@
 
 body{
     display:grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows:1fr 6fr;
+    grid-template-columns:minmax(150px,0.8fr) 4fr;
 }
 .sidebar{
   background-color: #0ea5e9;
-  grid-row:1/-1;
-  grid-column:1/2;
   color:white;
   padding-left:3ch;
-  display:grid;
-  grid-template-rows:2fr 6fr 3fr 6fr;
-  gap:2em;
 }
 .sidebar img{
   height:1em;
@@ -66,10 +60,12 @@ body{
 }
 nav.profile,
 nav.help{
-  font-size:2em;
+  font-size:1em;
+  margin-top:5ch;
 }
 .dashboard{
-  font-size:3em;
+  font-size:1.5em;
+  margin:1ch 0;
 }
 .sidebar div{
   display:grid;
@@ -82,7 +78,7 @@ nav.help{
   background-color: white;
 }
 form{
-  background-color:#a5aab3;
+  background-color:#d4d5da;
   max-width:80%;
   height:2em;
   border-radius:5px;
@@ -138,11 +134,13 @@ button{
 .accountMenu img{
   height: 4em;
   border-radius:50%;
+  display:block;
 }
 .account-group{
   display:flex;
   gap:2ch;
   align-items: center;
+  
 }
 .accountName{
   font-weight: 800;
@@ -150,19 +148,33 @@ button{
 }
 .accountMenu{
   display:flex;
-  justify-content: space-between;
   align-items: center;
+  padding:0 10ch;
+  width:100%;
 }
-nav>button{
+div.share>button{
   background-color: #0ea5e9;
   color:white;
   border-radius: 20px;
   height:2em;
   padding:0 1em;
 }
-nav.share{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+div.share{
   text-align: center;
-  gap:2ch;
+  justify-self: end;
+}
+.main-container{
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr 5fr;
+}
+.projects{
+  background-color: #d4d5da;
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.projectIdeas{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  height:calc(100vh-)
 }
