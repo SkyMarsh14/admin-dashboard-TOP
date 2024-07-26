@@ -175,7 +175,7 @@ div.share{
   grid-template-columns: 3fr 1fr;
 }
 
-.yourProjects{
+.projectIdeas{
   display:grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 }
@@ -184,4 +184,27 @@ div.share{
 }
 .account-group div{
   margin-left:1ch;
+}
+.leftContainer>div:first-child,
+.announcements,
+.trending{
+  margin-left:2ch;
+  margin-top:3ch;
+  font-weight:800;
+}
+.idea{
+  background-color: white;
+  margin:2ch;
+  border-radius: 5px;
+  padding:2ch;
+  border-left:0.5rem solid #fbbf24;
+  div.title{
+    font-weight: 800;
+  }
+}
+.shareOptions{
+  display:flex;
+  height:3ch;
+  gap:2ch;
+  justify-content: end;
 }
