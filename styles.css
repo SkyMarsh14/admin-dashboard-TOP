@@ -140,14 +140,15 @@ button{
   display:flex;
   gap:2ch;
   align-items: center;
-  
+  flex:1;
+  justify-content: space-between;
 }
-.accountName{
+.accountName>div:nth-child(2){
   font-weight: 800;
   font-size:1.5em;
+  margin-bottom:1ch;
 }
 .accountMenu{
-  display:flex;
   align-items: center;
   padding:0 10ch;
   width:100%;
@@ -157,7 +158,8 @@ div.share>button{
   color:white;
   border-radius: 20px;
   height:2em;
-  padding:0 1em;
+  width:5em;
+  margin:0 1ch;
 }
 div.share{
   text-align: center;
@@ -176,5 +178,10 @@ div.share{
 .projectIdeas{
   display:grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  height:calc(100vh-)
+}
+#intro{
+  display:flex;
+}
+.account-group div{
+  margin-left:1ch;
 }
