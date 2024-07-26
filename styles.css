@@ -184,6 +184,7 @@ div.share{
 }
 .account-group div{
   margin-left:1ch;
+<<<<<<< HEAD
 }
 .leftContainer>div:first-child,
 .announcements,
@@ -223,4 +224,6 @@ dl{
 .projectIdeas{
   display:grid;
   grid-template-columns: 2fr 1fr;
+=======
+>>>>>>> parent of 47dc639 (add svg images to project items. Add grid style auto-fit to project items)
 }
