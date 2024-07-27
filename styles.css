@@ -240,7 +240,7 @@ div.share{
     display:grid;
     grid-template-columns: min(50px,30%) 150px;
     grid-template-rows:1fr 1fr;
-    justify-content: center;
+    margin-left:2em;
   }
 }
 .leftContainer>div:first-child{
@@ -251,8 +251,6 @@ div.share{
   grid-row:1/-1;
   align-self: center;
   margin-right:2ch;
-  position:relative;
-  right:2em;
   img{
     height:100%;
   }
